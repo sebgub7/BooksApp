@@ -116,21 +116,21 @@
 
     determineRatingBackground(rating) {
       if (rating < 6) {
-        return 'background: linear-gradient(to bottom,  #fefcea 0%, #f1da36 100%)';
+        return 'linear-gradient(to right,  #fefcea 0%, #f1da36 100%)';
       }
       if (rating > 6 && rating <= 8) {
-        return 'background: linear-gradient(to bottom, #b4df5b 0%,#b4df5b 100%)';
+        return 'linear-gradient(to right, #fff 0%,#ff0000 100%)';
       }
       if (rating > 8 && rating <= 9) {
-        return 'background: linear-gradient(to bottom, #299a0b 0%, #299a0b 100%)';
+        return 'linear-gradient(to right, #299a0b 0%, #299a0b 100%)';
       }
       if (rating > 9) {
-        return 'background: linear-gradient(to bottom, #ff0084 0%,#ff0084 100%)';
+        return 'linear-gradient(to right, #ff0084 0%,#ff0084 100%)';
       }
     }
     determineWidth(rating) {
-      return Math.floor(rating * 10) + '%';
+      return Math.floor(rating * 10);
     }
   }
-new BooksList();
+  new BooksList();
 }
